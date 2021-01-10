@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="37dp"
+            android:layout_marginLeft="30dp">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <EditText
+                android:id="@+id/usrusr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="35dp"
+                android:background="#0000"
+                android:drawableRight="@drawable/user"
+                android:hint="Username"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+            <EditText
+                android:id="@+id/pswrd"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="22dp"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:maxLength="12"
+                android:background="#0000"
+                android:padding="16dp"
+                android:drawableRight="@drawable/pasword"
+                android:layout_marginRight="35dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/sin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="28dp"
+                android:background="@drawable/angle"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="connecter"
+                android:textColor="#fff"
+                android:textColorHighlight="#009688"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
